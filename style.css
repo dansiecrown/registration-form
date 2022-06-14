@@ -1,0 +1,115 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  body {
+    padding: 20px;
+    margin: 0;
+    padding-top: 80px;
+    background-color: var(--red);
+    background-image: url(./images/bg-intro-desktop.png);
+    font-family: "Poppins", sans-serif;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .description {
+    padding: 30px;
+    padding-top: 100px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .description h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+
+  .description p {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .content {
+    grid-column: 2;
+  }
+
+  .top {
+    margin: 10px 0px;
+    background-color: var(--blue);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .top p {
+    margin: 0;
+  }
+
+  .form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  form input {
+    width: 90%;
+    padding: 1em;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--grayish-blue);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--grayish-blue);
+  }
+
+  input::placeholder {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  input:focus {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--grayish-blue);
+    border: 1px solid var(--grayish-blue);
+  }
+
+  button {
+    width: 97%;
+    padding: 1.5em;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+  }
+
+  .form-container span {
+    color: var(--grayish-blue);
+    font-size: 10px;
+    font-weight: 900;
+  }
+
+  span strong a {
+    color: var(--red);
+  }
+}
