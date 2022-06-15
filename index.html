@@ -1,38 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration form</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0;400;0;500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <!-- google font -->
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0;400;0;500;0,700;0,900;1,100&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/8dd4b16ac7.js" crossorigin="anonymous"></script>
+
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 
 
 </head>
+
 <body>
     <main>
         <div class="description">
             <h2>Learn to code by watching others</h2>
-            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable</p>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                understanding how developers think is invaluable</p>
         </div>
         <div class="content">
             <div class="top">
                 <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
             </div>
             <div class="form-container">
-                <form>
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <input type="password" placeholder="Password" required>
-                    <button>CLAIM YOUR FREE TRIAL</button>
+                <form id="form" action="">
+                    <input type="text" placeholder="First Name" 
+                    classname="fname"  id="fname">
+                    <div class="err" id="fnameErr" >
+                        <div class="icon">
+                        <i class="fa-solid fa-circle-exclamation"></i></div>
+                        <small><em>First Name cannot be empty</em></small>
+                    </div>
+                    <input type="text" placeholder="Last Name" id="lname">
+                    <div class="err" id="lnameErr">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-exclamation"></i></div><small><em>Last Name cannot be empty</em></small>
+                    </div>
+                    <input type="email" placeholder="Email Address"id="email" >
+                    <div class="err" id="emailErr" >
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <small><em>Email cannot be empty</em></small>
+                    </div>
+                    <input type="password"  placeholder="Password" minlength="3" id="pword" >
+                    <div class="err" id="pwordErr">
+                        <div class="icon">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <small><em>Last Name cannot be empty</em></small>
+                    </div>
+                    <button type="submit">CLAIM YOUR FREE TRIAL</button>
                 </form>
-                <span>By clicking the button you are agreeing to our <strong><a>Terms and Services</a></strong></span>
+                <span class="terms">By clicking the button you are agreeing to our <strong><a>Terms and Services</a></strong></span>
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
