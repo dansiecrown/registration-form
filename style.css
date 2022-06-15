@@ -6,7 +6,7 @@
   --grayish-blue: hsl(246, 25%, 77%);
 }
 
-@media screen and (min-width: 375px) and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   body {
     padding: 20px;
     margin: 0;
@@ -158,9 +158,14 @@
     color: white;
   }
 
+  main {
+    display: block;
+  }
+
   .description {
     padding: 20px;
     padding-bottom: 50px;
+    display: block;
   }
 
   .description h2 {
